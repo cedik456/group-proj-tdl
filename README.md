@@ -35,3 +35,8 @@ Ensure you have the following installed on your machine:
  2. Create a new branch for your feature or bug fix
  3. Commit your changes and push them to your fork.
  4. Submit a pull request with a detailed explanation of your changes.
+
+## PS: Check the Configuration File
+
+Please make sure to check the `project_overview.txt` file in the root directory for any additional information or configurations related to the app.
+
