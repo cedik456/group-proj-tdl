@@ -28,3 +28,10 @@ Ensure you have the following installed on your machine:
    - React Js
    - Tailwind CSS
    - Firebase (to be implemented)
+
+## Contributing
+ Contributions are for Collaborators only
+ 1. Fork the repository
+ 2. Create a new branch for your feature or bug fix
+ 3. Commit your changes and push them to your fork.
+ 4. Submit a pull request with a detailed explanation of your changes.
