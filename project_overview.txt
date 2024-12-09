@@ -1,0 +1,41 @@
+Project Goal 
+
+The goal of this project is to create a simple yet functional to-do list application where users can:
+* Add tasks they need to complete.
+* Mark tasks as completed.
+* View tasks by status (completed, pending).
+* Review tasks from previous days (history view).
+* Customize the UI using Tailwind CSS for a modern, responsive design.
+
+This app will serve as a hands-on practice project for learning React.js for building user interfaces and Tailwind CSS for styling. Firebase will be implemented later to handle data persistence, allowing tasks to be saved across sessions.
+
+Features & Functionality
+1. Task Management:
+    * Users can add new tasks.
+    * Tasks can be marked as completed.
+    * Users can delete tasks.
+    * Tasks are displayed based on their status (e.g., pending, completed).
+2. Task History:
+    * Users can view a history of completed tasks from previous days.
+    * Tasks are stored in the app’s state (and later in Firebase) for review.
+3. UI Design:
+    * Modern, responsive UI built with Tailwind CSS.
+    * User-friendly interface with clear sections for adding tasks, viewing tasks, and reviewing history.
+4. State Management:
+    * React hooks (useState, useEffect) will be used to manage the state of tasks and UI components.
+    * Filters to view tasks by status or date.
+5. Responsive Design:
+    * The app will be fully responsive, ensuring it works on both desktop and mobile devices.
+
+Project Structure
+1. Frontend (UI & User Experience):
+    * Design and layout of the app: task input form, task list, buttons, etc.
+    * Tailwind CSS for styling.
+    * React state for task management.
+2. Task Management Logic:
+    * Adding, completing, and deleting tasks.
+    * Filtering tasks based on their status or date.
+    * Managing the internal state of tasks.
+3. History View:
+    * Display past tasks (e.g., completed tasks from previous days).
+    * Allow users to filter tasks based on status or date.
