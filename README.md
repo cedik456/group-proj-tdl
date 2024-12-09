@@ -1,8 +1,16 @@
-# React + Vite
+# To Do List with Backlogs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Brief description of the project.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ensure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/) (version X.X.X or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) (optional, for package management)
+
+## Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/project-name.git
+   cd project-name
