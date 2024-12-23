@@ -4,6 +4,7 @@ import Test from "./components/Test";
 const App = () => {
   return (
     <>
+      <h1>React App</h1>
       <Test />
     </>
   );
