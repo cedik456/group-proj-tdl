@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import TaskInput from "./components/TaskInput";
 import TaskList from "./components/TaskList";
 
+//PATUROGA NA NGANAY AKO NIGGA
+
 function App() {
   const [tasks, setTasks] = useState([]);
-
   const addTask = (text) => {
     setTasks([
       ...tasks,
