@@ -1,4 +1,3 @@
-import React from "react";
 import { Trash2, CheckCircle, Circle} from "lucide-react";
 
 function TaskItem ({ task, onToggleComplete, onDelete }){
