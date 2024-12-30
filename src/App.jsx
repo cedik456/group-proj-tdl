@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import TaskInput from "./components/TaskInput";
+import TaskList from "./components/TaskList";
 // import TaskList from "./components/TaskList";
-import { Input } from "postcss";
-
 
 function App() {
-    return (
-        <div>
-            <h1>To-Do List</h1>
-            <TaskInput />
-        </div>
-    );
-
+  return (
+    <div className="container mt-[150px] items-center flex justify-center mx-auto">
+      <div className="card">
+        <TaskInput />
+        <TaskList />
+      </div>
+    </div>
+  );
 }
 
 export default App;
