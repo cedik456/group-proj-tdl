@@ -1,6 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-sans;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+h2 {
+  @apply text-3xl font-semibold mb-3;
+}
+
+h3 {
+  @apply text-2xl font-medium mb-2;
+}
+
+p {
+  @apply text-base mb-4;
+}
+
+a {
+  @apply text-blue-500 hover:text-blue-700;
+}
 
 .btn-primary {
   @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
@@ -59,24 +86,7 @@
   @apply outline-none ring-2 ring-blue-300;
 }
 
-/* Responsive for small screens and unused navbar/footer components
-
-@media (max-width: 640px) {
-  .btn-primary, .btn-secondary, .btn-danger {
-    @apply px-2 py-1 text-sm;
-  }
-  .card {
-    @apply p-4 text-sm;
-  }
-  .input-title, .input-content {
-    @apply px-2 py-1;
-  }
-}
-
-.shadow-custom {
-  @apply shadow-lg shadow-blue-500/50;
-
-
+/* not yet(?) needed
 .navbar {
   @apply flex items-center justify-between p-4 bg-gray-800 text-white;
 }
@@ -95,5 +105,5 @@
 }
 .footer a {
   @apply text-white no-underline hover:underline;
-}
+} 
 */
