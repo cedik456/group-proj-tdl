@@ -3,41 +3,97 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded hover:;
+  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
+  @apply md:px-6 md:py-3;
+}
+.btn-primary:hover {
+  @apply bg-blue-700;
+}
+.btn-primary:focus {
+  @apply outline-none ring-2 ring-blue-300;
 }
 
 .btn-secondary {
-  @apply px-4 py-2 font-bold text-white bg-gray-500 rounded hover:;
+  @apply px-4 py-2 font-bold text-white bg-gray-500 rounded;
+  @apply md:px-6 md:py-3;
+}
+.btn-secondary:hover {
+  @apply bg-gray-700;
+}
+.btn-secondary:focus {
+  @apply outline-none ring-2 ring-gray-300;
 }
 
 .btn-danger {
-  @apply px-4 py-2 font-bold text-white bg-red-500 rounded hover:;
+  @apply px-4 py-2 font-bold text-white bg-red-500 rounded;
+  @apply md:px-6 md:py-3;
+}
+.btn-danger:hover {
+  @apply bg-red-700;
+}
+.btn-danger:focus {
+  @apply outline-none ring-2 ring-red-300;
 }
 
 .card {
   @apply p-6 mb-4 bg-white rounded-lg shadow-md;
+  @apply w-full md:w-1/2 lg:w-1/3;
+  @apply md:p-8 lg:p-10;
+  @apply text-center md:text-left;
+  @apply text-base md:text-lg lg:text-xl;
 }
 
 .input-title {
   @apply w-full px-4 py-2 mb-4 border border-gray-300 rounded;
+  @apply md:px-6 md:py-3;
+}
+.input-title:focus {
+  @apply outline-none ring-2 ring-blue-300;
 }
 
 .input-content {
   @apply w-full h-32 px-4 py-2 mb-4 border border-gray-300 rounded;
+  @apply md:px-6 md:py-3;
+}
+.input-content:focus {
+  @apply outline-none ring-2 ring-blue-300;
 }
 
-.alert-success {
-  @apply px-4 py-2 mb-4 font-bold text-white bg-green-500 rounded;
+/* Responsive for small screens and unused navbar/footer components
+
+@media (max-width: 640px) {
+  .btn-primary, .btn-secondary, .btn-danger {
+    @apply px-2 py-1 text-sm;
+  }
+  .card {
+    @apply p-4 text-sm;
+  }
+  .input-title, .input-content {
+    @apply px-2 py-1;
+  }
 }
 
-.alert-error {
-  @apply px-4 py-2 mb-4 font-bold text-white bg-red-500 rounded;
+.shadow-custom {
+  @apply shadow-lg shadow-blue-500/50;
+
+
+.navbar {
+  @apply flex items-center justify-between p-4 bg-gray-800 text-white;
+}
+.navbar a {
+  @apply text-white no-underline hover:underline;
+}
+.navbar .menu {
+  @apply hidden md:flex space-x-4;
+}
+.navbar .menu-toggle {
+  @apply block md:hidden;
 }
 
-.modal {
-  @apply fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75;
+.footer {
+  @apply p-4 bg-gray-800 text-white text-center;
 }
-
-.modal-content {
-  @apply p-6 bg-white rounded-lg shadow-lg;
+.footer a {
+  @apply text-white no-underline hover:underline;
 }
+*/
