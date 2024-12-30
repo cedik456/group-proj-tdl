@@ -3,41 +3,41 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded hover:;
 }
 
 .btn-secondary {
-    @apply bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;
+  @apply px-4 py-2 font-bold text-white bg-gray-500 rounded hover:;
 }
 
 .btn-danger {
-@apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded;
+  @apply px-4 py-2 font-bold text-white bg-red-500 rounded hover:;
 }
 
 .card {
-@apply bg-white shadow-md rounded-lg p-6 mb-4;
+  @apply p-6 mb-4 bg-white rounded-lg shadow-md;
 }
 
 .input-title {
-@apply border border-gray-300 rounded py-2 px-4 mb-4 w-full;
+  @apply w-full px-4 py-2 mb-4 border border-gray-300 rounded;
 }
 
 .input-content {
-@apply border border-gray-300 rounded py-2 px-4 mb-4 w-full h-32;
+  @apply w-full h-32 px-4 py-2 mb-4 border border-gray-300 rounded;
 }
 
 .alert-success {
-@apply bg-green-500 text-white font-bold py-2 px-4 rounded mb-4;
+  @apply px-4 py-2 mb-4 font-bold text-white bg-green-500 rounded;
 }
 
 .alert-error {
-@apply bg-red-500 text-white font-bold py-2 px-4 rounded mb-4;
+  @apply px-4 py-2 mb-4 font-bold text-white bg-red-500 rounded;
 }
 
 .modal {
-@apply fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center;
+  @apply fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75;
 }
 
 .modal-content {
-@apply bg-white rounded-lg p-6 shadow-lg;
+  @apply p-6 bg-white rounded-lg shadow-lg;
 }
