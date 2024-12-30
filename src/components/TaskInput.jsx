@@ -1,17 +1,10 @@
-import React from 'react';
-
+import React from "react";
 
 function TaskInput() {
   return (
-    <div>
-      <input
-      className='wd-100'
-      type="text"
-      placeholder="Enter a Task"
-      />
-      <button
-      className='btn-primary'
-      >Add</button>
+    <div className="flex gap-2">
+      <input className="input" type="text" placeholder="Enter a Task" />
+      <button className="btn bg-primary">Add task</button>
     </div>
   );
 }
