@@ -1,23 +1,11 @@
-import TaskItem from "./TaskItem";
 
-function TaskList ({ tasks, onToggleComplete, onDelete }) {
-    if(tasks.length === 0) {
-        return (
-        <p className="text-gray-500">
-            No tasks yet. Add one above.
-            </p>
-        );
-    }
 
+function Tasklist(){
     return (
-        <div className="space-y-2">
-            {tasks.map((task) => (
-                <TaskItem 
-                key={task.id} task={task} onToggleComplete={onToggleComplete} onDelete={onDelete} 
-                />
-            ))}
+        <div>
+            <h1>Task List</h1>
         </div>
     );
-};
+}
 
-export default TaskList;
+export default Tasklist;
