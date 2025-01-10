@@ -1,16 +1,11 @@
-import React, { useState } from "react";
-import TaskInput from "./components/TaskInput";
-import TaskList from "./components/TaskList";
-// import TaskList from "./components/TaskList";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="container mt-[150px] items-center flex justify-center mx-auto">
-      <div className="card">
-        <TaskInput />
-        <TaskList />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+    </Routes>
   );
 }
 
