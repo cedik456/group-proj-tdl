@@ -94,7 +94,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="text-xs text-left text-primary-500">
+      <div className="text-xs text-left text-gray-400">
         © 2025 | Ahead | All Rights Reserved.
       </div>
     </nav>
