@@ -9,19 +9,19 @@ body {
 }
 
 h1 {
-  @apply text-4xl font-bold mb-4;
+  @apply mb-4 text-4xl font-bold;
 }
 
 h2 {
-  @apply text-3xl font-semibold mb-3;
+  @apply mb-3 text-3xl font-semibold;
 }
 
 h3 {
-  @apply text-2xl font-medium mb-2;
+  @apply mb-2 text-2xl font-medium;
 }
 
 p {
-  @apply text-base mb-4;
+  @apply mb-4 text-base;
 }
 
 a {
@@ -32,9 +32,11 @@ a {
   @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
   @apply md:px-6 md:py-3;
 }
+
 .btn-primary:hover {
   @apply bg-blue-700;
 }
+
 .btn-primary:focus {
   @apply outline-none ring-2 ring-blue-300;
 }
@@ -43,9 +45,11 @@ a {
   @apply px-4 py-2 font-bold text-white bg-gray-500 rounded;
   @apply md:px-6 md:py-3;
 }
+
 .btn-secondary:hover {
   @apply bg-gray-700;
 }
+
 .btn-secondary:focus {
   @apply outline-none ring-2 ring-gray-300;
 }
@@ -54,9 +58,11 @@ a {
   @apply px-4 py-2 font-bold text-white bg-red-500 rounded;
   @apply md:px-6 md:py-3;
 }
+
 .btn-danger:hover {
   @apply bg-red-700;
 }
+
 .btn-danger:focus {
   @apply outline-none ring-2 ring-red-300;
 }
@@ -73,6 +79,7 @@ a {
   @apply w-full px-4 py-2 mb-4 border border-gray-300 rounded;
   @apply md:px-6 md:py-3;
 }
+
 .input-title:focus {
   @apply outline-none ring-2 ring-blue-300;
 }
@@ -81,6 +88,24 @@ a {
   @apply w-full h-32 px-4 py-2 mb-4 border border-gray-300 rounded;
   @apply md:px-6 md:py-3;
 }
+
 .input-content:focus {
   @apply outline-none ring-2 ring-blue-300;
+}
+
+input[type="checkbox"] {
+  @apply rounded-full;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #7c5ba6;
+  border-color: #7c5ba6;
 }
