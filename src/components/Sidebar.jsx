@@ -1,8 +1,10 @@
 import ProfilePic from "../assets/images/profile.png";
-import { FaRegBell } from "react-icons/fa";
 import { IoIosArrowDown, IoIosAddCircle } from "react-icons/io";
 import { BsLayoutSidebar } from "react-icons/bs";
 import { GoBell } from "react-icons/go";
+import { MdInbox } from "react-icons/md";
+import { BiCalendarAlt } from "react-icons/bi";
+import { CgCalendarDates } from "react-icons/cg";
 
 const Sidebar = () => {
   return (
@@ -15,26 +17,38 @@ const Sidebar = () => {
               alt=""
               className="w-6 h-6 border border-black rounded-full"
             />
-            <h1 className="mt-4 text-base font-normal">Ced</h1>
-            <IoIosArrowDown />
+            <h1 className="mt-4 text-lg font-normal">Ced</h1>
+            <IoIosArrowDown className="text-lg" />
           </div>
-          <div className="flex items-center gap-6 text-lg ">
+          <div className="flex items-center gap-6 text-xl ">
             <GoBell />
             <BsLayoutSidebar />
           </div>
         </div>
-        <button className="flex items-center gap-2 mb-3 ">
+        <button className="flex items-center w-full gap-2 py-2 pl-1 mb-3 hover:bg-slate-200 ">
           <IoIosAddCircle className="text-2xl" />
           Add Task
         </button>
         <div className="flex flex-col gap-2 ">
-          <a href="" className="text-black">
+          <a
+            href=""
+            className="flex items-center gap-2 p-2 text-black rounded hover:bg-slate-200"
+          >
+            <MdInbox className="text-lg" />
             Inbox
           </a>
-          <a href="" className="text-black">
+          <a
+            href=""
+            className="flex items-center gap-2 p-2 text-black rounded hover:bg-slate-200"
+          >
+            <BiCalendarAlt className="text-lg" />
             Today
           </a>
-          <a href="" className="text-black">
+          <a
+            href=""
+            className="flex items-center gap-2 p-2 text-black rounded hover:bg-slate-200"
+          >
+            <CgCalendarDates className="text-lg" />
             Upcoming
           </a>
         </div>

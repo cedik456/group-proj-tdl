@@ -14,16 +14,16 @@ export default {
           600: "#74569b",
           700: "#5d447c",
           800: "#46335d",
-          900: "#362848"
+          900: "#362848",
         },
 
         Danger: {
           50: "#FF6868",
-          100: "#FF3434"
-        }
+          100: "#FF3434",
+        },
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ["Poppins", "sans-serif"],
       },
     },
   },
