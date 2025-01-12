@@ -6,9 +6,7 @@ import { MdInbox } from "react-icons/md";
 import { BiCalendarAlt } from "react-icons/bi";
 import { CgCalendarDates } from "react-icons/cg";
 import { BsLayoutSidebar } from "react-icons/bs";
-import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { Home } from "lucide-react";
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
