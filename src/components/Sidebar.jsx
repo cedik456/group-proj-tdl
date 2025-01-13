@@ -41,23 +41,23 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               href=""
               className="flex items-center gap-2 p-2 text-black rounded-md hover:bg-[#F1EFED] hover:text-current "
             >
-              <MdInbox className="text-xl" />
+              <MdInbox className="text-2xl" />
               Inbox
             </a>
-            <a
-              href=""
+            <Link
+              to="/"
               className="flex items-center gap-2 p-2 text-black rounded-md hover:bg-[#F1EFED] hover:text-current"
             >
-              <BiCalendarAlt className="text-xl" />
+              <BiCalendarAlt className="text-2xl" />
               Today
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/weekly"
               className="flex items-center gap-2 p-2 text-black rounded hover:bg-[#F1EFED] hover:text-current"
             >
-              <CgCalendarDates className="text-xl" />
-              Upcoming
-            </a>
+              <CgCalendarDates className="text-2xl" />
+              Weekly
+            </Link>
           </div>
         </div>
         <div>
@@ -65,7 +65,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <h1 className="text-lg font-normal">My Projects</h1>
           </div>
           <div className="flex flex-col gap-1">
-            <div className="flex items-center gap-2 p-2 text-base rounded-md hover:bg-[#F1EFED]">
+            <div className="flex items-center gap-2 p-2 text-lg rounded-md hover:bg-[#F1EFED]">
               <span>#</span>
               <Link
                 to="/"
@@ -75,7 +75,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               </Link>
             </div>
 
-            <div className="flex items-center gap-2 p-2 text-base rounded-md hover:bg-[#F1EFED]">
+            <div className="flex items-center gap-2 p-2 text-lg rounded-md hover:bg-[#F1EFED]">
               <span>#</span>
               <Link
                 to="/"
@@ -85,7 +85,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               </Link>
             </div>
 
-            <div className="flex items-center gap-2 p-2 text-base rounded-md hover:bg-[#F1EFED]">
+            <div className="flex items-center gap-2 p-2 text-lg rounded-md hover:bg-[#F1EFED]">
               <span>#</span>
               <Link
                 to="/"
