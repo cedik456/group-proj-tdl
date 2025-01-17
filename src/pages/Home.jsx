@@ -1,9 +1,21 @@
+import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import Sidebar from "../components/Sidebar";
-import { useState } from "react";
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [tasks, setTasks] = useState([]);
+
+  const addTask = () => {
+    const newTask = { id: tasks.length + 1, text: "New Task" };
+    setTasks([...tasks, newTask]);
+  };
+
+  const updateTaskText = (id, newText) => {
+    setTasks(
+      tasks.map((task) => (task.id === id ? { ...task, text: newText } : task))
+    );
+  };
 
   return (
     <main className="relative flex home-container">
@@ -15,26 +27,26 @@ const Home = () => {
           <div>
             <h2>Plans For Today</h2>
             <ul className="mb-2">
-              <li className="flex items-center">
-                <input type="checkbox" id="task1" className="rounded-full" />
-                <label htmlFor="task1" className="ml-2 leading-loose">
-                  Lorem ipsum Lorem ipsum Lorem ipsum
-                </label>
-              </li>
-              <li className="flex items-center">
-                <input type="checkbox" id="task2" className="rounded-full" />
-                <label htmlFor="task2" className="ml-2 leading-loose">
-                  Lorem ipsum Lorem ipsum Lorem ipsum
-                </label>
-              </li>
-              <li className="flex items-center">
-                <input type="checkbox" id="task3" className="rounded-full" />
-                <label htmlFor="task3" className="ml-2 leading-loose">
-                  Lorem ipsum Lorem ipsum Lorem ipsum
-                </label>
-              </li>
+              {tasks.map((task) => (
+                <li key={task.id} className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id={`task${task.id}`}
+                    className="rounded-full"
+                  />
+                  <input
+                    type="text"
+                    value={task.text}
+                    onChange={(e) => updateTaskText(task.id, e.target.value)}
+                    className="ml-2 leading-loose"
+                  />
+                </li>
+              ))}
             </ul>
-            <FaPlus className="text-purple-500 cursor-pointer" />
+            <FaPlus
+              className="text-purple-500 cursor-pointer"
+              onClick={addTask}
+            />
           </div>
         </div>
       </div>
