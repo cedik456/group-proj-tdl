@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Weekly from "./pages/Weekly";
 import Inbox from "./pages/Inbox";
 import Done from "./pages/Done";
+import Test from "./pages/Test";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/weekly" element={<Weekly />}></Route>
       <Route path="/inbox" element={<Inbox />}></Route>
       <Route path="/done" element={<Done />}></Route>
+      <Route path="/test" element={<Test />}></Route>
     </Routes>
   );
 }
